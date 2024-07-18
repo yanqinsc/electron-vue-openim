@@ -24,7 +24,7 @@
     "@electron-toolkit/preload": "^3.0.0",
     "@electron-toolkit/utils": "^3.0.0",
     "electron-updater": "^6.1.7",
-    "open-im-sdk-wasm": "3.5.2"
+    "open-im-sdk-wasm": "^3.5.1"
   },
   "devDependencies": {
     "@electron-toolkit/eslint-config": "^1.0.2",
