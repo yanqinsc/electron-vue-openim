@@ -3,9 +3,10 @@
 
 import { getSDK, CbEvents } from "open-im-sdk-wasm";
 
+const isElectron = window.electron !== undefined;
 const IMSDK = getSDK({
     coreWasmPath: "./openIM.wasm",
-    sqlWasmPath: "/sql-wasm.wasm",
+    sqlWasmPath: (isElectron ? ".." : "") + "/sql-wasm.wasm" ,
     debug: true
   });
 IMSDK.on(CbEvents.OnConnecting, () => {

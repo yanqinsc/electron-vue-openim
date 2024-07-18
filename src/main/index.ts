@@ -16,7 +16,8 @@ function createWindow(): void {
       sandbox: false,
       nodeIntegration: false,
       contextIsolation: true,
-      devTools: true
+      devTools: true,
+      webSecurity: false
     }
   })
 
